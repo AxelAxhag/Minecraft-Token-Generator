@@ -13,7 +13,7 @@ As previously stated, the tokens are used to interact with the minecraft API. Th
 * Why do you check generate multiple tokens? - The reason why is because for some API calls (such as name changing), mojang has set a limit for how many calls you can make during a certain time period.
 * Does this work for my account? - It only works for migrated accounts that have transitioned to Microsoft. If you login through the Microsoft login page then you have a migrated account and you're able to generate tokens. If you're using a Mojang account then this won't work.
 * For how long do my tokens last? - They last for 24h, I believe, after that time has passed the tokens have to be refreshed/regenerated. This is handled by the program, removing the old ones and creating new ones.
-* I get duplicates, what should I do? - Try to change then add some delay between the calls. You can add `generateToken(<Email>, <Password>, 1)` `time.sleep(<seconds>)` and add a for loop to create a delay.
+* Why would I need multiple tokens? - The reason why is because Mojang limits the amount your amount of traffic based on your token. You can skirt by this restriction by using multiple tokens. Don't think you have to use proxies, however it might be wise to use some if you were to send that much traffic.
 
 ## How to get it running 🚗
 
